@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+  <div class="container-fluid">
+      <div class="row align-items-center p-2 b25 text-dark">
+              <div class="col-md-3  d-none d-md-block h6"> telephone: +374-99-331-668</div>
+              <div class="col-md-3  d-none d-md-block h6 text-center"> Welcome to our store</div>
+              <div class="col-6 col-md-2  d-block"> 
+                  <select class="custom-select bg-light text-dark border-gray" >
+                    <option selected>AM</option>
+                    <option value="1">RU</option>
+                    <option value="2">EN</option>
+                    <option value="3">US</option>
+                    <option value="4">FR</option>
+                  </select>
+              </div>
+              <div class=" col-6 col-md-2 d-block">
+                   <select class="custom-select bg-light text-dark border-gray" >
+                      <option selected>֏</option>
+                      <option value="1">$</option>
+                      <option value="2">€</option>
+                      <option value="3">£</option>
+                      <option value="4">¢</option>
+                  </select>
+              </div>
+              <div class="col-md-2 col-lg-2 d-none d-md-block">
+               <button type="button" class="btn bg-info b25 text-white ">
+                    Messages <span class="badge badge-danger">99+</span>
+               </button>
+              </div>
+           
+          </div>
+
+              <div class="row b1  align-items-center p-1 bg-dark text-light">
+      <div class="col-6 col-md-2 ">
+        <a href="#" class="link ml-1"><img src="data:image/png;base64,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" alt="" loading="lazy" width="150" height="75"></a>
+      </div>
+      <div class="col-md-8  d-none d-md-block ">
+        <form class="form-inline float-right mr-3">
+        <input  class="form-control mr-sm-2 bg-light border-dark text-dark btn-outline-dark" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn b1  btn-outline-dark my-2 my-sm-0  text-light bg-info" type="submit">Search</button>
+      </form>
+      </div>
+      <div class="col-6 col-md-2 pr-3 ">
+         <div class="dropdown float-right ">
+          <button class="btn b1 text-white dropdown-toggle  btn-outline-dark bg-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My account
+          </button>
+          <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#LoginModal">Login</a>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div></a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Registration</a>
+            <a class="dropdown-item" href="#">My Orders</a>
+            <a class="dropdown-item" href="#">Account Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Sure Name</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                        <div class="form-group">
+                  <label for="exampleInputPassword1">Address</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                   <div class="form-group">
+                  <label for="exampleInputPassword1">Phone Number</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+           
+           
+                <button type="submit" class="btn btn-primary">Sing in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+           
+                <button type="submit" class="btn btn-primary">Sign In</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="row ">
+  <div class="col-12 p-0">
+  <nav class="navbar navbar-expand-xl bg-success b25">
+  
+  <button class="navbar-toggler text-dark border-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-auto ">
+
+     
+       <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown1
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown2
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown3
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown4
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown5
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown6
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown7
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown8
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown9
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown text-center">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown10
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+  </div>     
+</div> 
+<br>
+<br>
+
+
+
+<div class="contaner">
+<div class="card col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 float-left" >
+  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp13touch-silver-select-202005?wid=892&hei=820&&qlt=80&.v=1587459986844" class="card-img-top " alt="..." style="min-height: 200px; max-height: 200px;">
+  <div class="card-body ">
+    <h5 class="card-title">MacBook Pro</h5>
+    <p class="card-text">Stars-4.6</p>
+    <h3>3000$</h3>
+    <a href="file:///D:/samvel_html/boostrap/product.html" class="btn btn-danger bg-danger">Buy now</a>
+    <a href="#" class="btn btn-primary bg-info">Drope to box</a>
+  </div>
+</div>
+
+<div class="card col-12 col-sm-12 col-md-6 col-lg-3  col-xl-3 float-left" >
+  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-202002-gallery4?wid=4000&hei=3072&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1580947854554" class="card-img-top " alt="..." style="min-height: 200px; max-height: 230px;">
+  <div class="card-body ">
+    <h5 class="card-title">MacBook Air</h5>
+      <p class="card-text">Stars-4.6</p>
+      <h3>4500$</h3>
+    <a href="file:///D:/samvel_html/boostrap/product.html" class="btn btn-danger bg-danger">Buy now</a>
+    <a href="#" class="btn btn-primary bg-info">Drope to box</a>
+  </div>
+</div>
+<div class="card col-12 col-sm-6 col-md-12 col-lg-3  col-xl-3 float-left" >
+  <img src="https://www.apple.com/newsroom/images/product/mac/standard/Apple-iMac-gets-2x-more-performance-03192019_big.jpg.large.jpg" class="card-img-top " alt="..." style="min-height: 200px; max-height: 230px;">
+  <div class="card-body ">
+    <h5 class="card-title">iMac</h5>
+       <p class="card-text">Stars-4.7</p>
+       <h3>2500$</h3>
+    <a href="file:///D:/samvel_html/boostrap/product.html" class="btn btn-danger bg-danger">Buy now</a>
+    <a href="#" class="btn btn-primary bg-info">Drope to box</a>
+  </div>
+</div>
+
+<div class="card col-12 col-sm-6 col-md-6 col-lg-3  col-xl-3 float-left" >
+  <img src="https://static.turbosquid.com/Preview/2019/06/14__21_31_08/mac_01.jpg20EDA1D3-6822-444F-AF9C-523B5767FA02Large.jpg" class="card-img-top " alt="..." style="min-height: 200px; max-height: 230px">
+  <div class="card-body ">
+    <h5 class="card-title">iMac Pro</h5>
+       <p class="card-text">Stars-4.8</p>
+       <h3>5000$</h3>
+    <a href="file:///D:/samvel_html/boostrap/product.html" class="btn btn-danger bg-danger">Buy now</a>
+    <a href="#" class="btn btn-primary bg-info">Drope to box</a>
+</div>
+</div>
+<div class="card col-12 col-sm-12 col-md-6 col-lg-6  col-xl-6 float-left" >
+  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-select-white-201801_FV1?wid=934&hei=441&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1565208972383" class="card-img-top" alt="..." style="min-height: 150px; max-height: 300px;  max-width: 500px; max-height: 230px;">
+  <div class="card-body">
+    <h5 class="card-title">HomePod</h5>
+      <p class="card-text">Stars-4.4</p>
+      <h3>150$</h3>
+    <a href="file:///D:/samvel_html/boostrap/product.html" class="btn btn-danger bg-danger">Buy now</a>
+    <a href="#" class="btn btn-primary bg-info">Drope to box</a>
+  </div>
+</div>
+<div class="card col-12 col-sm-12 col-md-12 col-lg-6  col-xl-6 " >
+  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=445&hei=445&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634795000" class="card-img-top" alt="..." style="min-height: 150px; max-height: 230px">
+  <div class="card-body">
+    <h5 class="card-title">AirPods Pro</h5>
+      <p class="card-text">Stars-4.8</p>
+<h3>200$</h3>
+    <a href="file:///D:/samvel_html/boostrap/product.html" class="btn btn-danger bg-danger">Buy now</a>
+    <a href="#" class="btn btn-primary bg-info">Drope to box</a>
+  </div>
+</div>
+</div>
+  
+ 
+
+
+     <div class="row p-1 d-block">
+                                    <nav class="navbar  bg-info w-100  p-3  ">
+                                      <ul class="nav w-100 list-group-horizontal-md ">
+                                        <li class=" text-center h4  col-md-3"><a href="" class="text-decoration-none text-dark">Contact us</a></li>
+                                        <li class=" text-center  h4  col-md-3"><a href=""class="text-decoration-none text-dark">Live Chat</a></li>
+                                        <li class=" text-center h4  col-md-3"><a href="" class="text-decoration-none text-dark">Shipping</a></li>
+                                        <li class=" text-center h4  col-md-3"><a href="" class="text-decoration-none text-dark">Terms and Conditions</a></li>
+                                      </ul>
+                                      </nav>
+                                  </div>
+                                  <div class="row w-auto">
+                                    <nav class="navbar bg-secondary w-100  p-3 mb-0  d-none d-md-block">
+                                  
+                                  <ul class="nav w-100 list-group-horizontal-md border-0 mb-0 ">
+                                    <li class=" text-center col-md"><ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong><a href="" class="text-decoration-none text-success">Links group 1</a></strong></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 1</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 2</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 3</a></li>
+                                  </ul></li>
+                                  <li class=" text-center col-md"><ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong><a href="" class="text-decoration-none text-success">Links group 2</a></strong></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 1</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 2</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 3</a></li>
+                                  </ul></li>
+                                  <li class=" text-center col-md"><ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong><a href="" class="text-decoration-none text-success">Links group 3</a></strong></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 1</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 2</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 3</a></li>
+                                  </ul></li>
+                                  <li class=" text-center col-md"><ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong><a href="" class="text-decoration-none text-success">Links group 4</a></strong></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 1</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 2</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 3</a></li>
+                                  </ul></li>
+                                  <li class=" text-center col-md"><ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong><a href="" class="text-decoration-none text-success">Links group 5</a></strong></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 1</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 2</a></li>
+                                    <li class="list-group-item"><a href="" class="text-decoration-none text-success">link 3</a></li>
+                                  </ul></li>
+                                   
+                                  </ul>
+                                  </nav>
+                                  </div>
+                                          <div class="row p-3 bg-info d-none">
+                                            <div class="text col-md-3 h4 text-dark d-none d-md-block">
+                                              Find and follow us on:
+                                            </div>
+                                            <div class="logo col-md-1 col-1">
+                                             <a href="https://www.facebook.com/samvel.hambr"> <img src="https://image.flaticon.com/icons/svg/174/174848.svg" alt="" width="40" height="40" style="margin-left: 60px;"></a>
+                                            </div>
+                                            <div class="logo1 col-md-1 col-1">
+                                              <a href="https://www.instagram.com/sam.hambardzumyan.05/"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="" width="40" height="40" style="margin-left: 60px;"></a>
+                                             </div>
+                                             <div class="logo2 col-md-1 col-1">
+                                              <a href="https://twitter.com/explore"> <img src="https://image.flaticon.com/icons/svg/174/174876.svg" alt="" width="40" height="40" style="margin-left: 60px;"></a>
+                                             </div>
+                                             <div class="logo3 col-md-1 col-2">
+                                              <a href="https://www.youtube.com/"> <img src="https://image.flaticon.com/icons/svg/174/174883.svg" alt="" width="40" height="40" style="margin-left: 60px;"></a>
+                                             </div>
+                                                
+                                        
+                                                  <div class="copyright col-md-5 h4 text-dark col-12 text-center">
+                                                    Samvel Hambardzumyan
+                                                  </div>
+                                          </div>
+
+                        
+        </div>
+                
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
